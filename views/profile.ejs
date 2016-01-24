@@ -7,11 +7,83 @@
   <body>
     <% include ./partials/header %>
     <div class="main">
-      <% include ./partials/profileFormEdit %>
-      <div class="profileform">
+      <!-- <% include ./partials/profileFormEdit %> -->
+      <!-- <div class="profileform">
         <% include ./partials/profileForm %>
-      </div>
+      </div> -->
       <div class="profile">
+
+
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <h2>Fill your profile info</h2>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+
+        <!-- <h2>Fill your profile info</h2> -->
+            <form id='getData'>
+              <input type="text" name="name" placeholder="First name" value=''><br>
+              <input type="text" name="lastname" placeholder="Last name"><br>
+              <input type="date" name="bday"><br>
+              <select name="zodiac">
+                <option value="Aries">Aries</option>
+                <option value="Taurus">Taurus</option>
+                <option value="Gemini">Gemini</option>
+                <option value="Cancer">Cancer</option>
+                <option value="Leo">Leo</option>
+                <option value="Virgo">Virgo</option>
+                <option value="Libra">Libra</option>
+                <option value="Scorpio">Scorpio</option>
+                <option value="Sagittarius">Sagittarius</option>
+                <option value="Capricorn">Capricorn</option>
+                <option value="Aquarius">Aquarius</option>
+                <option value="Pisces">Pisces</option>
+              </select><br>
+              <input type="text" name="bloodtype" placeholder="blood type"><br>
+              <input type="text" name="placeOfBirth" placeholder="place of birth"><br>
+              <input type="text" name="currentCity" placeholder="current City"><br>
+              <input type="text" name="favoriteBook" placeholder="favorite Book"><br>
+              <input type="text" name="favoriteSong" placeholder="favorite Song"><br>
+              <input type="text" name="favoriteMovie" placeholder="favorite Movie"><br>
+              <input type="text" name="favoriteFood" placeholder="favorite Food"><br>
+              <input type="text" name="favoriteTvShow" placeholder="favorite Tv Show"><br>
+              <input type="text" name="gender" placeholder="Gender"><br>
+              <input type="text" name="gitHub" placeholder="GitHub"><br>
+              <input type="text" name="linkedIn" placeholder="LinkedIn"><br>
+              <input type="text" name="website" placeholder="Website"><br>
+              <input type="text" name="facebook" placeholder="Facebook"><br>
+              <input type="text" name="twitter" placeholder="Twitter"><br>
+              <input type="text" name="instagram" placeholder="Instagram"><br>
+              <input type="text" name="tumblr" placeholder="Tumblr"><br>
+              <input type="text" name="languages" placeholder="Languages"><br>
+              <input type="text" name="coding" placeholder="Coding"><br>
+              <input type="text" name="group" placeholder="group name"><br>
+              <input type="text" name="graduate" placeholder="graduate year"><br>
+              <textarea rows="4" cols="50" name="bio" placeholder="Enter bio here..."></textarea><br>
+              <input type='file' id="asd" />
+              <input type="submit"  value="Save">
+              <input type="hidden" name="url" id="url">
+            </form>
+        <img id="img" src="" />
+        <div id="base"></div>
+        <div id="imgFromDB"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        <!-- <div class="profileform"> -->
+          <!-- <% include ./partials/profileForm %> -->
+        <!-- </div> -->
+
         <div class="profilehead">
           <div class="projectform">
             <% include ./partials/projects %>

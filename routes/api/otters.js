@@ -29,6 +29,7 @@ router.get('/', function(req, res){
 });
 
 router.get('/profile', function(req, res){
+  console.log(req);
   Otter.findOne({ id: req.user._id }, function(err, otter) {
     res.json({ Otter: otter });
   });

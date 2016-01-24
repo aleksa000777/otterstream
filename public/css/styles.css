@@ -6,6 +6,7 @@ a {
   color: dimgrey;
 }
 
+
 .navbar {
   max-height: 300px;
   width: 200px;
@@ -14,6 +15,10 @@ a {
   position: fixed;
   background-color: lightseagreen;
   padding: 0;
+
+.profilelist {
+  /*display: none;*/
+
 }
 
 .toggleprofilelist, .openprofile {
@@ -48,6 +53,7 @@ a {
   margin-top: 15%;
 }
 
+<<<<<<< HEAD
 .chat-toggle {
   top:0;
   position: fixed;
@@ -55,6 +61,10 @@ a {
 
 .profilelist, .profileModal, .project, .profilefooter, .projectlist, .profileform, .projectform, .editprofileform, .navbar {
   display: none;
+=======
+.profileform {
+  /*display: none;*/
+>>>>>>> b532a6a
 }
 
 .projectlist *,  .profilelist * {

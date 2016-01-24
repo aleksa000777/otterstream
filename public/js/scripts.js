@@ -454,7 +454,7 @@ $(function(){
   function readImage() {
     var size = this.files[0].size;
       if ( this.files && this.files[0] ) {
-        if(size > 15625){
+        if(size > 156250){
           $('#url').val('');
           $('#img').attr( "src", '' );
           $("#asd").val('');
