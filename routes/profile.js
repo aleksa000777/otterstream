@@ -12,8 +12,7 @@ router.get('/', function(req, res){
 
 // ====aleksa staff start=====
 router.get('/chat', function(req, res){
-  if(req.cookies.token){
-      console.log(req.cookies.token===req.user.token);
+  if(req.cookies.token===req.user.token){
     res.render('chat');
   } else {
     res.render('index');
