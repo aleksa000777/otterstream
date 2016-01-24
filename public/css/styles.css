@@ -7,7 +7,7 @@ body {
 }
 
 .profilelist {
-  display: none;
+  /*display: none;*/
 }
 
 .project {
@@ -27,7 +27,7 @@ body {
 }
 
 .profileform {
-  display: none;
+  /*display: none;*/
 }
 
 .projectform {
